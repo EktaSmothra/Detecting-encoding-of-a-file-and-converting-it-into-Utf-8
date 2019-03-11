@@ -1,0 +1,1 @@
+# Detecting-encoding-of-a-file-and-converting-it-into-Utf-8
