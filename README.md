@@ -1,1 +1,26 @@
 # Detecting-encoding-of-a-file-and-converting-it-into-Utf-8
+For manipulating text in computers, we should have mapping between the character set ( it is the finite list of characters that the system recognizes) and numbers. Text is ordered sequences of characters and encoding is the process of converting characters to numbers. To understand this concept more, let's take an example of following string :
+ 
+    Hello
+
+In unicode, this "Hello" would represent as:
+
+    U+0048 U+0065 U+006C U+006C U+006F.
+
+We can see that it is just a bunch of code points or numbers. Now the point is how we will store this code point in memory of computer. This is where encoding comes in play. The earliest idea was to store these numbers in two bytes each. So, "Hello" would become :
+
+    00 48 00 65 00 6C 00 6C 00 6F
+
+Well, technically, it can also be written as following.
+
+    48 00 65 00 6C 00 6C 00 6F 00 ?
+
+Early implementors wanted to be able to store their Unicode code points in high-endian or low-endian mode, whichever their particular CPU was fastest at, meaning, there were already two ways to store Unicode. There were already some doggone documents out there using various ANSI and DBCS character sets and who’s going to convert them all? Moi? For this reason alone most people decided to ignore Unicode for several years and in the meantime things got worse. Then came the concept of Utf-8. In this, every code point from 0-127 is stored in a single byte. Only code points 128 and above are stored using 2, 3, in fact, up to 6 bytes. Now "Hello" can be stored as:
+
+    48 65 6C 6C 6F
+
+If you want to study more about encodings and history about it, i would recommend you to go through the second reference.
+
+# References
+http://www.wellformedness.com/blog/understanding-text-encoding-in-python-2-and-python-3/   
+https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
