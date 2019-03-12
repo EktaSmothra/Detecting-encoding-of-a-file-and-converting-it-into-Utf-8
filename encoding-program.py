@@ -7,10 +7,6 @@ with open(file, 'rb') as f:
     data = f.read()
     det = chardet.detect(data)['encoding']
     print(det)
-    # det = chardet.detect(file)['encoding']
-#   encoding=chardet.detect(data).get("encoding")
-#   print(encoding)
-
 
 rawdata = urllib.request.urlopen('http://yahoo.co.jp/').read()
 print(chardet.detect(rawdata))
