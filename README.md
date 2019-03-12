@@ -19,7 +19,10 @@ Early implementors wanted to be able to store their Unicode code points in high-
 
     48 65 6C 6C 6F
 
-If you want to study more about encodings and history about it, i would recommend you to go through the second reference.
+If you want to study more about encodings and history about it, i would recommend you to go through the second reference. Now, moving on to my program and understanding how encoding detection can be done in python.
+
+## Chardet
+Chardet is a universal character encoding detector. This library is a port of the auto-detection code in Mozilla. The easiest way to use chardet library is with the detect function. This function takes one argument and returns a dictionary containing auto-detected encoding including confidence level from 0 to 1. You can study more about it on https://chardet.readthedocs.io/en/latest/usage.html#basic-usage
 
 # References
 http://www.wellformedness.com/blog/understanding-text-encoding-in-python-2-and-python-3/   
