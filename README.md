@@ -25,8 +25,9 @@ If you want to study more about encodings and history about it, i would recommen
 Chardet is a universal character encoding detector. This library is a port of the auto-detection code in Mozilla. The easiest way to use chardet library is with the detect function. This function takes one argument and returns a dictionary containing auto-detected encoding including confidence level from 0 to 1. You can study more about it on https://chardet.readthedocs.io/en/latest/usage.html#basic-usage
 
 ## urllib.request
-This module defines various functions and classes that can be used for opening url in web browser. It means you can access your websites via your program. You can download data, parse data, access website, perform GET and POST requests, modify headers etc.
+This module defines various functions and classes that can be used for opening url in web browser. It means you can access your websites via your program. You can download data, parse data, access website, perform GET and POST requests, modify headers etc. Read more about this module in the official guide at https://docs.python.org/3/library/urllib.request.html and https://pythonprogramming.net/urllib-tutorial-python-3/
 
 # References
-http://www.wellformedness.com/blog/understanding-text-encoding-in-python-2-and-python-3/   
-https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
+* http://www.wellformedness.com/blog/understanding-text-encoding-in-python-2-and-python-3/   
+* https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
+
