@@ -27,6 +27,11 @@ Chardet is a universal character encoding detector. This library is a port of th
 ## urllib.request
 This module defines various functions and classes that can be used for opening url in web browser. It means you can access your websites via your program. You can download data, parse data, access website, perform GET and POST requests, modify headers etc. Read more about this module in the official guide at https://docs.python.org/3/library/urllib.request.html and https://pythonprogramming.net/urllib-tutorial-python-3/
 
+## codecs
+This module defines base classes for standard Python codecs (encoders and decoders) and provides access to the internal Python codec registry which manages the codec and error handling lookup process. We can also execute the code of this repository without using codecs. To learn more about codecs, you can follow the official documentation at https://docs.python.org/2/library/codecs.html
+
+These libraries and having basic knowledge of file operations in python are enough to understand the code and its working. 
+
 # References
 * http://www.wellformedness.com/blog/understanding-text-encoding-in-python-2-and-python-3/   
 * https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
